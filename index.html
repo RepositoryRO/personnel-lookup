@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Personnel Info Lookup</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Firebase CDN -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Personnel Lookup</h1>
+    <div class="dropdowns">
+      <select id="circle">
+        <option value="">Select Circle</option>
+      </select>
+      <select id="division">
+        <option value="">Select Division</option>
+      </select>
+      <select id="range">
+        <option value="">Select Range</option>
+      </select>
+      <button onclick="searchPerson()">Search</button>
+    </div>
+
+    <div id="result" class="card"></div>
+
+    <footer>
+      <a href="https://wa.me/7010392218" target="_blank">
+        <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp"/>
+        +91 7010392218
+      </a>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
